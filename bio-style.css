@@ -1,0 +1,102 @@
+@import url("https://fonts.googleapis.com/css2?family=Work+Sans:wght@300;400&display=swap");
+
+body {
+  background-color: #3e3e3e;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+nav {
+  margin-bottom: 60px;
+  positon: fixed;
+  width: 100%;
+  z-index: 1;
+  top: 0;
+}
+
+ul {
+  display: flex;
+  flex-direction: row;
+  list-style-type: none;
+  font-family: "Work Sans", sans serif;
+  color: white;
+}
+
+p {
+  font-family: "Work Sans", sans serif;
+  color: white;
+}
+
+.text {
+  color: black;
+}
+
+.portfolio {
+  margin-left: auto;
+}
+
+bio {
+  color: #9dd468;
+}
+
+.contact {
+  margin-right: 50px;
+}
+
+.navDivider {
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+.container {
+  margin: 100px 50px 200px 50px;
+}
+
+.scroll {
+  display: grid;
+  background-color: lightgray;
+  width: auto;
+  height: auto;
+  overflow: scroll;
+  padding: 50px;
+  border-radius: 10px;
+  overflow-y: scroll;
+  overflow-x: hidden;
+}
+
+.info {
+  grid-area: 2 / 2 / span 10 / span 1;
+}
+
+span {
+  color: #9dd468;
+}
+
+a {
+  color: white;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+footer {
+  padding: 20px;
+}
+
+#scroll-style::-webkit-scrollbar {
+  width: 1em;
+  min-width: 8px;
+}
+
+#scroll-style::-webkit-scrollbar-track-piece {
+  background: white;
+  -webkit-box-shadow: none; //inset 0 0 6px rgba(255,0,0,0.3);
+}
+
+#scroll-style::-webkit-scrollbar-thumb {
+  background-color: #9dd468;
+}

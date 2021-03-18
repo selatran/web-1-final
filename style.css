@@ -1,0 +1,188 @@
+@import url("https://fonts.googleapis.com/css2?family=Work+Sans:wght@300;400&display=swap");
+
+body {
+  background-color: #3e3e3e;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+nav {
+  margin-bottom: 60px;
+  positon: fixed;
+  width: 100%;
+}
+
+ul {
+  display: flex;
+  flex-direction: row;
+  list-style-type: none;
+  font-family: "Work Sans", sans serif;
+  color: white;
+}
+
+p {
+  font-family: "Work Sans", sans serif;
+  color: white;
+}
+
+.portfolio {
+  margin-left: auto;
+  color: #9dd468;
+}
+
+.contact {
+  margin-right: 50px;
+}
+
+.navDivider {
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+.container {
+  margin: 50px;
+  display: grid;
+  grid-template-columns: 50% 1fr;
+  grid-template-rows: 50% 1fr;
+  grid-gap: 10px;
+}
+
+.scrollBox {
+  display: grid;
+  grid-template-columns: repeat(3, 200px);
+  background-color: darkgray;
+  width: 650px;
+  height: 500px;
+  padding: 10px;
+  grid-gap: 10px;
+  overflow-y: scroll;
+  overflow-x: hidden;
+}
+
+#scroll-style::-webkit-scrollbar {
+  width: 1em;
+  min-width: 8px;
+}
+
+#scroll-style::-webkit-scrollbar-track-piece {
+  background: white;
+  -webkit-box-shadow: none; //inset 0 0 6px rgba(255,0,0,0.3);
+}
+
+#scroll-style::-webkit-scrollbar-thumb {
+  background-color: #9dd468;
+}
+
+.info {
+  grid-area: 2 / 2 / span 10 / span 1;
+}
+
+.fullImage {
+  width: 70%;
+  height: auto;
+}
+
+img {
+  width: 200px;
+  height: 200px;
+  object-fit: scale-down;
+}
+
+span {
+  color: #9dd468;
+}
+
+.box img {
+  opacity: 1;
+  -webkit-transition: 0.1s ease-in-out;
+  transition: 0.1s ease-in-out;
+}
+
+.box:hover img {
+  opacity: 0.4;
+}
+
+a {
+  color: white;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+.fullImage:hover {
+  width: 100%; /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+}
+
+footer {
+  padding: 20px;
+}
+
+.logo {
+  max-height: 100%;
+  height: auto;
+}
+
+@media (max-width: 1300px) {
+  .scrollBox {
+  display: grid;
+  grid-template-columns: repeat(2, 200px);
+  background-color: darkgray;
+  width: 450px;
+  height: 500px;
+  padding: 10px;
+  grid-gap: 10px;
+  overflow-y: scroll;
+  overflow-x: hidden;
+
+}
+  
+  @media (max-width: 800px) {
+  .scrollBox {
+  display: grid;
+  grid-template-columns: repeat(1, 200px);
+  background-color: darkgray;
+  width: 300px;
+  height: 500px;
+  padding: 10px;
+  grid-gap: 10px;
+  overflow-y: scroll;
+  overflow-x: hidden;
+}
+    
+@media (max-width: 600px) {
+  .container {
+  margin: 20px;
+  display: flex;
+  flex-direction: column-reverse;
+  }
+  
+  .scrollBox {
+    margin-bottom: 100px;
+    max-width: 250px;
+    margin: auto;
+  }
+  
+  .fullImage {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  }
+  
+  .fullImage {
+    pointer-events: none;
+  }
+  
+  
+  
+  #contactInfo, .logo {
+    display: block;
+    margin: auto;
+    text-align: center;
+  }
+}
+    
+
